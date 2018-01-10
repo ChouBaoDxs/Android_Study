@@ -1,20 +1,11 @@
-# Android注意事项
-
+代码提交：
 自己手动提交Android Studio的项目时，注意不要提交：
-<<<<<<< HEAD:Android注意事项.txt
 /build
 /.idea
 /.gradle
 *.iml
 local.properties
-=======
-* /build
-* /.idea
-* /.gradle
-* *.iml
-* local.properties
 
->>>>>>> 5ff5308d342a2e7e643bc499337ad0831a29b817:Android注意事项.md
 注：通过Android Stduio新建的项目会生成.gitignore文件，
 会帮忙忽略文件，其内容大致如下，我们可以自己定制：
 *.iml

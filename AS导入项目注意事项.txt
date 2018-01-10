@@ -1,0 +1,23 @@
+在导入项目时，Android Studio根据项目的配置信息，需要加载的东西包括但不限于:
+1.gradle
+2.buildTool
+为了让其不从网上下载这些东西，我们可以根据已经运行成功的项目的配置信息直接修改
+要导入的项目配置信息:
+
+修改gradle插件版本——项目根目录下的build.gradle:
+classpath 'com.android.tools.build:gradle:2.2.3'
+
+修改gradle版本——项目根目录下的gradle/wrapper/gradle-wrapper.properties:
+distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
+
+修改compileSdkVersion、buildToolsVersion——项目根目录下的app/build.gradle:
+compileSdkVersion 25
+buildToolsVersion "24.0.3"
+
+我的Air：
+build.gradle：classpath ‘com.android.tools.build:gradle:2.2.3'
+gradle-wrapper.properties：gradle-2.14.1-all.zip
+app/build.gradle：
+    compileSdkVersion 25
+    buildToolsVersion "24.0.3"
+
