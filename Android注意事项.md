@@ -6,6 +6,7 @@
 * /.gradle
 * *.iml
 * local.properties
+
 注：通过Android Stduio新建的项目会生成.gitignore文件，
 会帮忙忽略文件，其内容大致如下，我们可以自己定制：
 *.iml
