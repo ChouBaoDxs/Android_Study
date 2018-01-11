@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.choubao.androidtutorial">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IndexActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".ActivityLifeCycle" />
+        <activity android:name=".DataActivity" />
+        <activity android:name=".CaptureActivity" />
+        <activity android:name="com.choubao.broadcast.SendBroadcastActivity" />
+        <activity android:name=".DynamicRegisterBroadcastReceiver" />
+
+        <receiver android:name="com.choubao.broadcast.MyBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.choubao.action.NOTIFA" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.choubao.barcode.ScanBarcodeActivity" />
+        <activity android:name=".ThreadTutorialActivity" />
+        <activity android:name=".StartServiceActivity" />
+
+        <service
+            android:name="com.choubao.service.StartService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.choubao.service.BindService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.choubao.service.StartAndBindService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name="com.choubao.service.AIDLService" />
+
+        <activity android:name="com.choubao.service.RemoteServiceActivity" />
+        <activity android:name=".MenuActivity"></activity>
+    </application>
+
+</manifest>

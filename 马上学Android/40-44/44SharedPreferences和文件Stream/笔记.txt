@@ -1,0 +1,13 @@
+Android存储数据的四种方式：
+1.SharedPreferences（以键值对的方式存储数据）
+2.SQLite
+3.Content Provider
+4.File
+
+实现SharedPreferences存储的步骤：
+1.获得SharedPreferences对象
+2.获得SharedPreferences.Editor对象
+3.通过putXXX()
+4.Editor.commit()保存
+
+SharedPreferences存储在手机的/data/data/程序包名下

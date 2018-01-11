@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.choubao.www.fragmentdemo.FragmentDemo.DetialActivity">
+
+    <fragment
+        android:id="@+id/fg_news_detial"
+        android:name="com.choubao.www.fragmentdemo.FragmentDemo.DetialFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </fragment>
+
+
+</LinearLayout>

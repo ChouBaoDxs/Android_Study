@@ -1,0 +1,7 @@
+创建平板的布局：右键res->News->Android Resource Directory
+->Resource type选择layout，这里以屏幕超过600dp是平板电脑为例，
+选择Smallest Screen Width添加到右侧，数值填上600->OK
+
+Fragment的onAttach()方法在当fragment和activity被关联时调用
+
+setArguments()方法必须在onAttach()之前使用，否则会崩溃

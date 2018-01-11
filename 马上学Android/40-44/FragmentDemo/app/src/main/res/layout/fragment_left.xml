@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.choubao.www.fragmentdemo.LeftFragment"
+    android:background="#FFBB00">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动态添加Fragment"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnChangeRightFragment"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去NewsActivity"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnGoToNewsActivity"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数据给第二个Fragment"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnSendDataToFragment"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去SharedPreferenceActivity"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnGoToSharedPreferenceActivity"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去OpenFileActivity"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnGoToOpenFileActivity"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

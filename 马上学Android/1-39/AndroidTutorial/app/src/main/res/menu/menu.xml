@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.choubao.androidtutorial.MenuActivity">
+      <item
+          android:id="@+id/action_settings"
+          android:title="Setting"
+          android:orderInCategory="100"
+          app:showAsAction="never">
+          <menu>
+              <item
+                  android:id="@+id/subMenu"
+                  android:title="Sub Menu">
+
+              </item>
+          </menu>
+      </item>
+
+      <group android:id="@+id/menuGroup">
+          <item android:id="@+id/menuG1"
+              android:title="Group Menu1"></item>
+          <item android:id="@+id/menuG2"
+              android:title="Group Menu2"></item>
+      </group>
+
+</menu>
