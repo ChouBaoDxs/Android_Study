@@ -1,0 +1,8 @@
+被启动app的activity里要在AndroidManifest.xml里定义<intent-filter>：
+<intent-filter>
+	<category android:name="android.intent.category.DEFAULT"/>
+	<action android:name="com.example.choubao.componentpermission.intent.action.MyAty"/>
+</intent-filter>
+
+启动方app：
+startActivity(new Intent("com.example.choubao.componentpermission.intent.action.MyAty"));
