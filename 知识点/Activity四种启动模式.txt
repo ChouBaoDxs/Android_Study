@@ -1,0 +1,9 @@
+standard：默认
+singleTop：目标Activity处于任务栈栈顶则直接复用，否则创建
+singleTask：目标Activity存在但不是栈顶，移除之上所有Activity使其成为栈顶；
+            目标Activity存在且为栈顶，直接复用；目标Activity不存在，创建
+singleInstance：目标Activity不存在，创建一个新的任务栈并将该Activity入栈；
+		目标Activity存在，无论在哪个任务栈里，直接显示到最前面
+
+在AndroidManifest.xml设置Activity的启动模式：
+<activity android:name=".MainActivity" android:launchMode="standard" />
