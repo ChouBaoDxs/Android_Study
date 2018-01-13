@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.choubao.www.services">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- 可以添加process属性设置其在新进程中启动该服务，参数是进程名称    android:process=":remmote" -->
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".MyBoundService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+        <service
+            android:name=".MessengerService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

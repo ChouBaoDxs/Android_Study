@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choubao.www.property_animation.MainActivity">
+
+    <ImageView
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/she1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:text="翻转效果"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button_fanzhuan" />
+
+    <Button
+        android:text="连续动画"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_fanzhuan"
+        android:layout_alignStart="@+id/button_fanzhuan"
+        android:id="@+id/button_zuhe" />
+
+    <Button
+        android:text="缓慢消失"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_zuhe"
+        android:layout_alignStart="@+id/button_zuhe"
+        android:id="@+id/button_godie" />
+
+    <Button
+        android:text="缓慢消失2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_godie"
+        android:layout_alignStart="@+id/button_godie"
+        android:id="@+id/button_godie2" />
+
+    <Button
+        android:text="定制动画"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_godie2"
+        android:layout_alignStart="@+id/button_godie2"
+        android:id="@+id/button_dingzhi" />
+
+    <Button
+        android:text="使用xml设置属性动画"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_dingzhi"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:id="@+id/button_xml" />
+
+
+</RelativeLayout>

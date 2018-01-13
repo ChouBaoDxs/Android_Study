@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="64dp"
+        android:maxHeight="64dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView"
+        android:src="@drawable/weixin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌曲名称"
+        android:layout_weight="1"
+        android:id="@+id/textView_songName"/>
+
+    <Button
+        android:text="播放"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_play" />
+
+    <Button
+        android:text="下一首"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_next" />
+
+</LinearLayout>

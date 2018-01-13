@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="falv">
+        <item>民法</item>
+        <item>刑法</item>
+        <item>行政法</item>
+        <item>民诉</item>
+        <item>刑诉</item>
+        <item>商经法</item>
+        <item>国际法</item>
+        <item>理论法</item>
+    </array>
+</resources>

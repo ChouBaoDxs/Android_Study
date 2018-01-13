@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Spinner</string>
+
+    <array name="falv">
+        <item>刑法</item>
+        <item>民法</item>
+        <item>行政法</item>
+        <item>刑诉</item>
+        <item>民诉</item>
+        <item>三国</item>
+        <item>商经</item>
+        <item>理论</item>
+    </array>
+</resources>
