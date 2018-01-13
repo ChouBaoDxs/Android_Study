@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zijisuibianxie="http://schemas.android.com/apk/com.choubao.www.slidingmenu"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.choubao.www.slidingmenu.MainActivity">
+
+    <!--<HorizontalScrollView-->
+    <com.choubao.www.slidingmenu.SlidingMenu
+        android:id="@+id/slidingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--zijisuibianxie:rightPadding="300dp">-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <include layout="@layout/left_menu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF8877"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="toggleMenu"
+                    android:text="菜单"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="startChouTi"
+                    android:text="去抽屉式菜单"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.choubao.www.slidingmenu.SlidingMenu>
+    <!--</HorizontalScrollView>-->
+</RelativeLayout>
