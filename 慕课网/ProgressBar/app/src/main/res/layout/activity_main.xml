@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:choubao="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choubao.www.progressbar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.choubao.www.progressbar.HorizontalProgressbarWithProgress
+            android:id="@+id/id_progress01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="1"
+            choubao:progress_reach_color="#ff0000"
+            choubao:progress_text_color="#ff0000"
+            choubao:progress_unreach_color="#44ff0000"/>
+
+        <com.choubao.www.progressbar.HorizontalProgressbarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="100"
+            choubao:progress_text_color="#44ff0000"/>
+
+        <com.choubao.www.progressbar.HorizontalProgressbarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="30"
+            choubao:progress_reach_color="#00ff00"
+            choubao:progress_text_color="#44ff0000"
+            choubao:progress_unreach_color="#4400ff00"/>
+
+        <com.choubao.www.progressbar.RoundProgressBarWithProgress
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            choubao:radius="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="30"
+            choubao:progress_reach_color="#00ff00"
+            choubao:progress_text_color="#000000"
+            choubao:progress_unreach_color="#4400ff00"/>
+
+        <com.choubao.www.progressbar.RoundProgressBarWithProgress
+            android:id="@+id/id_progress02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            choubao:radius="60dp"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="1"
+            choubao:progress_reach_color="#ff0000"
+            choubao:progress_text_color="#000000"
+            choubao:progress_text_size="30sp"
+            choubao:progress_unreach_color="#44ff0000"/>
+
+    </LinearLayout>
+</ScrollView>
