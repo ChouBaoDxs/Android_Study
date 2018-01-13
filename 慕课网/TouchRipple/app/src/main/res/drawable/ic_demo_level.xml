@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认显示第一个，代码控制显示后面的-->
+    <item android:maxLevel="1">
+        <bitmap android:src="@mipmap/ic_launcher"/>
+    </item>
+
+    <item android:maxLevel="2">
+        <bitmap android:src="@mipmap/ic_launcher"/>
+    </item>
+    <item android:maxLevel="3">
+        <bitmap android:src="@mipmap/ic_launcher"/>
+    </item>
+</level-list>
