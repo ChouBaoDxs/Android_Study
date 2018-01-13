@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.choubao.www.drawabledemo.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BitmapDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startBitmapDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LayerDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startLayerDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StateListDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startStateListDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LevelListDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startLevelListDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TransitionDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startTransitionDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="InsertDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startInsertDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClipDrawable"
+        android:textAllCaps="false"
+        android:id="@+id/startClipDrawable"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义Drawable"
+        android:textAllCaps="false"
+        android:id="@+id/startCustomDrawable"/>
+
+</LinearLayout>

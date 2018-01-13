@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.choubao.www.drawabledemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BitmapDrawableActivity">
+        </activity>
+        <activity android:name=".LayerDrawableActivity">
+        </activity>
+        <activity android:name=".StateListActivity">
+        </activity>
+        <activity android:name=".LevelListDrawableActivity">
+        </activity>
+        <activity android:name=".TransitionDrawableActivity">
+        </activity>
+        <activity android:name=".InsertDrawableActivity">
+        </activity>
+        <activity android:name=".ClipDrawableActivity">
+        </activity>
+        <activity android:name=".CustomDrawableActivity">
+        </activity>
+    </application>
+
+</manifest>
